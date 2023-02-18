@@ -134,6 +134,8 @@ EOF
 
 babylond tendermint unsafe-reset-all --home $HOME/.babylond --keep-addr-book
 
+curl https://snapshots-testnet.nodejumper.io/babylon-testnet/bbn-test1_2023-02-17.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.babylond
+
 # start service
 sudo systemctl daemon-reload
 sudo systemctl enable babylond
