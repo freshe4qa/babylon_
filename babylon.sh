@@ -72,6 +72,7 @@ cd && rm -rf babylon
 git clone https://github.com/babylonchain/babylon
 cd babylon
 git checkout v0.7.2
+make install
 
 # config
 babylond config chain-id $BABYLON_CHAIN_ID
