@@ -58,7 +58,7 @@ apt install curl iptables build-essential git wget jq make gcc nano tmux htop nv
 
 # install go
 if ! [ -x "$(command -v go)" ]; then
-ver="1.20.3" && \
+ver="1.21.3" && \
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" && \
 sudo rm -rf /usr/local/go && \
 sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" && \
