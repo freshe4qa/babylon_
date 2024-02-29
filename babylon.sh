@@ -68,7 +68,7 @@ source $HOME/.bash_profile
 fi
 
 # download binary
-cd && rm -rf babylon
+cd $HOME && rm -rf babylon
 git clone https://github.com/babylonchain/babylon
 cd babylon
 git checkout v0.8.3
